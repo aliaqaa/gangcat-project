@@ -1,0 +1,58 @@
+
+@import "tailwindcss";
+
+:root {
+ 
+  font-weight: 400;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+  margin:auto;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+  --primaryOrange: #ff9900;
+  --secondaryOrange: #F8494C;
+  --thirdOrange:#FF3300;
+  --forthOrange:#FF7C00;
+  --fivthOrange:#FFB600;
+}
+@layer components {
+  .primaryOrange{
+    background-color: var(--primaryOrange);
+  }
+  .secondaryOrange{
+    background-color: var(--secondaryOrange);
+  }
+  .thirdOrange{
+    background-color: var(--thirdOrange);
+  }
+  .forthOrange{
+    background-color: var(--forthOrange);
+  }
+  .fivthOrange{
+    background-color: var(--fivthOrange);
+  }
+  .gototopbutton{
+    border:2px solid var(--primaryOrange);
+    background-color: #000000;
+    color: #FF3300;
+  }
+}
+@theme {
+  --primaryOrange: var(primaryOrange);
+  --secondaryOrange: var(secondaryOrange);
+  --thirdOrange: var(thirdOrange);
+}
+.bg-auth-mode{
+  background-color: #FFB600;
+  cursor: pointer;
+}
+#authInput::placeholder{
+  color: black;
+  font-weight: 900;
+  font-size: larger;
+  
+}#authInput{
+  outline: none;
+}
