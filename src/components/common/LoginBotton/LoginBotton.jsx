@@ -10,7 +10,7 @@ function LoginBotton({ className }) {
       {jwtToken ? (
         <Link
           to="/cms"
-          className={`bg-black text-orange-500  rounded-3xl items-center text-center content-center px-8 m-4
+          className={`bg-black text-orange-500  rounded-3xl items-center text-center content-center px-8 m-4 
         ${className}`}
         >
           <FaUser />

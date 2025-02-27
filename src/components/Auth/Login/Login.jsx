@@ -2,7 +2,7 @@ import React from "react";
 
 function Login() {
   return (
-    <form className="  text-center text-black">
+    <form className="  text-center text-black items-center">
       <input
         id="authInput"
         type="text"
@@ -11,12 +11,12 @@ function Login() {
       />
       <input
         id="authInput"
-        type="text"
+        type="password"
         className="bg-black bg-auth-mode p-5 w-4/5 placeholder-black text-black my-5 rounded"
         placeholder="PASSWORD"
       />
       <br />
-      <input type="checkbox" name="remember me"  />
+      <input type="checkbox" name="remember me" className="" />
       
        Remember Me
       

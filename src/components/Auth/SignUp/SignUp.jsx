@@ -11,13 +11,13 @@ function SignUp() {
     />
     <input
       id="authInput"
-      type="text"
+      type="password"
       className="bg-black bg-auth-mode p-5 w-4/5 placeholder-black text-black my-1 rounded"
       placeholder="PASSWORD"
     />
     <input
       id="authInput"
-      type="text"
+      type="password"
       className="bg-black bg-auth-mode p-5 w-4/5 placeholder-black text-black my-1 rounded"
       placeholder="CONFIRM PASSWORD"
     />

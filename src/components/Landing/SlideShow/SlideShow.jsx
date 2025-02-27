@@ -18,7 +18,7 @@ function SlideShow() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper container h-screen"
       >
-        <SwiperSlide className="">
+        <SwiperSlide className="px-32">
           <img
             src="/public/Images/Posts/thumb-1920-1354313.jpeg"
             alt="gang"
@@ -27,14 +27,14 @@ function SlideShow() {
         </SwiperSlide>
         
      
-        <SwiperSlide className="">
+        <SwiperSlide className="px-32">
           <img
             src="/public/Images/Posts/three-cats-wearing-sunglasses-hoodies-pose-photo-posing-all-fish-themed-which-gives-impression-dressed-343045656.webp"
             alt="gang"
             className="grayscale-50"
           />
         </SwiperSlide>
-        <SwiperSlide className="">
+        <SwiperSlide className="px-32">
           <img
             src="/public/Images/Posts/Leonardo_Lightning_XL_cats_with_thug_life_glass_and_golden_nec_2 (1).jpg"
             alt="gang"
