@@ -12,7 +12,7 @@ function DefualtHeader() {
   };  
   return (
     <>
-      <div className="container text-asd text-black primaryOrange m-auto flex justify-between">
+      <div className="container text-asd text-black primaryOrange m-auto flex justify-between font-extrabold">
         <LoginBotton className="max-lg:hidden" />
         <button className="lg:hidden flex flex-col items-center my-auto mx-10" onClick={toggleMenu}>  
           <span className="block w-8 h-0.5 bg-black mb-1"></span>  
@@ -32,7 +32,7 @@ function DefualtHeader() {
                 <Link   
                 key={item.id}   
                 to={item.path}   
-                className=" p-2 hover:bg-gray-300 transition-colors duration-200 "  
+                className=" p-2 hover:bg-gray-300 transition-colors duration-200 font-extrabold"  
                 onClick={() => setIsMenuOpen(false)} // Close menu when an item is clicked  
                 >  
                 {item.title}  

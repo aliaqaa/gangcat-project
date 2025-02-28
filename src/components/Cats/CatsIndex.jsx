@@ -1,12 +1,12 @@
 import React from 'react'
 import CatsHero from './CatsHero/CatsHero'
-import CatsPagination from './CatsPagination/CatsPagination'
+import CatSearch from './CatsPagination/CatSearch'
 
 function CatsIndex() {
   return (
     <>
     <CatsHero/>
-    <CatsPagination/>
+    <CatSearch/>
     </>
   )
 }

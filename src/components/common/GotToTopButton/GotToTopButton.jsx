@@ -29,7 +29,7 @@ const GoToTopButton = () => {
     return (  
         <button  
             onClick={scrollToTop}  
-            className={`fixed bottom-5 right-5 z-50 text-white rounded  gototopbutton p-4 shadow-lg transition-opacity duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}  
+            className={` fixed bottom-5 right-5 z-50 text-white rounded  gototopbutton p-4 shadow-lg transition-opacity duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}  
             style={{ display: isVisible ? 'block' : 'none' }}  
         >  
         <FaArrowUp className='text-[#FF3300]'/>
