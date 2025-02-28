@@ -7,7 +7,7 @@ function AuthIndex() {
     <div className="container m-auto mt-10 forthOrange flex p-2  rounded w-7/10">
       <div id="rightside" className="">
         <img
-          src="/public/Images/Posts/motor.jpg"
+          src="../../../../public/Images/Posts/motor.jpg"
           alt="motor"
           className="w-82 float-end"
         />
