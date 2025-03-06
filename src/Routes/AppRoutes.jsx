@@ -9,7 +9,8 @@ import Cats from '../Pages/Cats/Cats';
 import Gallery from '../Pages/Gallery/Gallery';
 import PrivateRoute from './PrivateRoute';
 import NotFound from '../Pages/NotFound/NotFound';
-
+import Cms from '../Pages/Cms/Cms';
+import Cat from '../Pages/Cat/Cat';
 const AppRoutes = () => (
   <Router>
     <Routes>
@@ -23,9 +24,10 @@ const AppRoutes = () => (
       <Route element={<PrivateRoute />}>
         <Route element={<DefaultLayout />}>
           <Route path="/landing" element={<Landing />} />
+          <Route path="/cms" element={<Cms />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/cats" element={<Cats />} />
-          <Route path="/cats/:catName" element={<Cats />} />
+          <Route path="/cats/:catName" element={<Cat />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/alitousi" element={<AliTousi />} />
         </Route>

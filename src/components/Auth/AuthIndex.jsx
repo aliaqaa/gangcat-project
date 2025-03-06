@@ -1,8 +1,25 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import Login from '../Auth/Login/Login';
+import Cookies from 'js-cookie';
 import SignUp from '../Auth/SignUp/SignUp';
+import { Navigate, useNavigate } from "react-router";
 function AuthIndex() {
   const [mode, setMode] = useState("signup");
+  const navigate = useNavigate();
+  const jwt = Cookies.get('jwt'); 
+
+ useEffect(() => {
+    const timer = setTimeout(() => {
+      if(jwt){
+        navigate("/landing");
+        
+      }else{
+        
+        navigate("/");
+      }
+    }, 1000); 
+    return () => clearTimeout(timer);
+  }, [navigate]);
   return (
     <div className="container m-auto mt-10 forthOrange flex p-2  rounded w-7/10">
       <div id="rightside" className="">

@@ -3,6 +3,7 @@ import useGetCats from '../../Hooks/useGetCats';
 import Modal from './Modal'; // Update the path as necessary  
 import GangCatLoading from '../Loadings/GangCatLoading';
 import Pagination from '../Cats/CatsPagination/Pagination';
+
 function GalleryIndex() {  
     const { data, loading, error } = useGetCats("/cats/gallery");  
     const [isModalOpen, setModalOpen] = useState(false);  

@@ -1,12 +1,15 @@
-import React from 'react'
-import AuthIndex from '../../components/Auth/AuthIndex'
+import React from "react";
+import AuthIndex from "../../components/Auth/AuthIndex";
 
 function index() {
+ 
+
   return (
     <>
-    <AuthIndex/>
+     
+      <AuthIndex />
     </>
-  )
+  );
 }
 
-export default index
+export default index;
