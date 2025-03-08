@@ -1,15 +1,18 @@
 import React, { useState } from "react";  
-import { useSelector } from "react-redux";  
+import { useDispatch, useSelector } from "react-redux";  
 import { selectBasketItems } from "../../../Slice/basketSlice";  
 import axios from "axios";  
 import Cookies from 'js-cookie';  
+import { removeItem, clearBasket } from '../../../Slice/basketSlice'; // Adjust path as needed  
+
 const Modal = ({ isOpen, closeModal }) => {  
     if (!isOpen) return null;  
+    const dispatch = useDispatch();  
+
     const basketItems = useSelector(selectBasketItems);  
     const buyerId = Cookies.get("UserId");  
     const [plea, setPlea] = useState("");  
     const firstCatId = basketItems.length > 0 ? basketItems[0]._id : null;  
-console.log(firstCatId)
     const handleBackdropClick = (e) => {  
         if (e.target === e.currentTarget) {  
             closeModal();  
@@ -30,6 +33,7 @@ console.log(firstCatId)
             console.log(response.data);  
             alert("Your Request Will Be Done Soon")
             closeModal();
+            dispatch(clearBasket());  
             // Handle success  
         } catch (error) {  
             console.error("Error creating transaction:", error);  
